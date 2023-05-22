@@ -1,0 +1,83 @@
+
+  <body>
+    <!DOCTYPE html>
+    <html lang="tr">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="LOTUS" />
+        <meta name="description" content="Üsküdar University" />
+        <link href="images/uskudar-universitesi-logo.png" rel="icon" />
+        <meta name="keywords" content="üsküdar,internship,lotus" />
+        <link href="images/uskudar-universitesi-logo.png" rel="icon" />
+        <title>IAS</title>
+        <style>
+          @import url("css/all.css");
+        </style>
+      </head>
+      <body class="bdy">
+        <header class="header">
+          <div class="header-right">
+            <div class="admin-panel">Admin Panel</div>
+          </div>
+          <div class="logo">
+            <img
+              src="images/uskudar-universitesi-logo.png"
+              alt="Logo"
+              class="img-fluid"
+              style="width: 5 rem; height: 5rem"
+            />
+          </div>
+        </header>
+        <div
+          class="container cnt d-flex justify-content-center align-items-center"
+          style="height: 100vh"
+        >
+          <video autoplay muted loop id="player" style="z-index: -100">
+            <source src="videos/background.mp4" type="video/mp4" />
+          </video>
+
+          <div class="c">
+            <div class="container-form">
+              <form
+                style="
+                  border-top-right-radius: 0%;
+                  border-bottom-right-radius: 0%;
+                "
+              >
+                <label for="iCoorId">Coordinator Id</label>
+                <input
+                  type="text"
+                  id="stId"
+                  placeholder="Enter your coordinator id"
+                  autofocus
+                />
+
+                <label for="password" class="mt-2">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+
+                <button id="button2" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <small>
+            <small
+              >Copyright <i class="bi bi-c-circle"></i> 2023 LOTUS GROUP</small
+            >
+          </small>
+        </div>
+
+        <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="js/special/extra.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<body>
+  <!DOCTYPE html>
+  <html lang="tr">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!---- Site Kimliği -->
+      <meta name="author" content="LOTUS" />
+      <meta name="description" content="Üsküdar University" />
+      <meta name="keywords" content="üsküdar,internship,lotus" />
+      <link href="images/uskudar-universitesi-logo.png" rel="icon" />
+      <title>IAS</title>
+
+      <!---- CSS for sidebar -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous"
+      />
+      <!---- Icons for sidebar -->
+      <link
+        href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+
+      <style>
+        body {
+          background-color: #f9f8ff;
+        }
+      </style>
+    </head>
+    <body>
+      <nav class="sidebar close">
+        <header>
+          <div class="image-text">
+            <span class="image">
+              <img src="images/user.png" alt="" />
+            </span>
+
+            <div class="text logo-text">
+              <span class="name">LOTUS</span>
+              <span class="profession">Student Panel</span>
+            </div>
+          </div>
+
+          <i class="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+          <div class="menu">
+            <ul class="menu-links">
+              <li class="nav-link">
+                <a href="#">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="text nav-text">Homepage</span>
+                </a>
+              </li>
+
+              <li class="nav-link">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-mail"
+                    width="5"
+                    height="5"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                    ></path>
+                    <path d="M3 7l9 6l9 -6"></path>
+                  </svg>
+                  <span class="text nav-text">Messages</span>
+                </a>
+              </li>
+
+              <li class="nav-link">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-files"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 3v4a1 1 0 0 0 1 1h4"></path>
+                    <path
+                      d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z"
+                    ></path>
+                    <path
+                      d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2"
+                    ></path>
+                  </svg>
+                  <span class="text nav-text">Documents</span>
+                </a>
+              </li>
+
+              <li class="nav-link">
+                <a href="#">
+                  <i class="bx bx-bar-chart-alt-2 icon"></i>
+                  <span class="text nav-text">Opportunites</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottom-content" style="margin-bottom: 20px">
+            <li class="">
+              <a href="#">
+                <i class="bx bx-log-out icon"></i>
+                <span class="text nav-text">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
+
+      <!---- Page -->
+      <section class="home"></section>
+
+      <!---- Footer -->
+      <div class="footer">
+        <small>
+          <small
+            >Copyright <i class="bi bi-c-circle"></i> 2023 LOTUS GROUP</small
+          >
+        </small>
+      </div>
+
+      <!---- JavaScript Kodları -->
+      <script>
+        const body = document.querySelector("body"),
+          sidebar = body.querySelector("nav"),
+          toggle = body.querySelector(".toggle");
+
+        toggle.addEventListener("click", () => {
+          sidebar.classList.toggle("close");
+        });
+      </script>
+
+      <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="js/special/extra.js"></script>
+    </body>
+  </html>
+</body>
